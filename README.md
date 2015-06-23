@@ -1,4 +1,4 @@
-# Airtake 工作流工具
+# 工作流工具
 
 ## gulp目录
 ### config 配置source和dist各种文件路径以及服务端口
@@ -18,3 +18,5 @@
 ### 注意事项， gulp watch会调用browser-sync, 会启动一个端口(端口在config.serverport中设置)， 目前需要自己手动起一个http服务， 如http-server -p config.serverport的值， 然后再启动gulp watch。
 
 其他一并打包、计算hash值、模板编译等等稍后逐一添加 :)
+
+此思路基于[react-rocket-boilerplate](https://github.com/jakemmarsh/react-rocket-boilerplate)
