@@ -1,22 +1,33 @@
-# 工作流工具
+工作流工具
+====================
 
-## gulp目录
-### config 配置source和dist各种文件路径以及服务端口
-### index 启动服务
+模块化配置gulp任务，避免每次重开项目的时候需要手动去修改gulp任务，实现配置化，模块化从而提高可复用性。此思路基于[react-rocket-boilerplate](https://github.com/jakemmarsh/react-rocket-boilerplate)
 
-## 现有功能
-### gulp sass 编译config中styles.src里面的scss文件至styles.dest
+---
 
-### gulp coffee 编译config中scripts.src里面的coffee文件至scripts.dest
+### gulp目录
 
-### gulp uglify 压缩js文件
+1. config 配置source和dist各种文件路径以及服务端口
+2. index 启动服务
 
-### gulp minify 压缩css文件
+---
 
-### gulp watch 监听scss文件 浏览器刷新（coffee已注释，需要的话取消注释即可）
+### 现有功能
 
-### 注意事项， gulp watch会调用browser-sync, 会启动一个端口(端口在config.serverport中设置)， 目前需要自己手动起一个http服务， 如http-server -p config.serverport的值， 然后再启动gulp watch。
+`gulp sass` 编译config中styles.src里面的scss文件至styles.dest
+
+`gulp coffee` 编译config中scripts.src里面的coffee文件至scripts.dest
+
+`gulp uglify` 压缩js文件
+
+`gulp minify` 压缩css文件
+
+`gulp watch` 监听scss文件 浏览器刷新（coffee已注释，需要的话取消注释即可）
+
+注意事项， `gulp watch`会调用browser-sync, 会启动一个端口(端口在config.serverport中设置)， 目前需要自己手动起一个http服务， 如`http-server -p config.serverport的值`， 然后再启动`gulp watch`。
+
+---
 
 其他一并打包、计算hash值、模板编译等等稍后逐一添加 :)
 
-此思路基于[react-rocket-boilerplate](https://github.com/jakemmarsh/react-rocket-boilerplate)
+
