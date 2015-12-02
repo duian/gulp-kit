@@ -7,7 +7,7 @@
 
 ### gulp目录
 
-1. config 配置source和dist各种文件路径以及服务端口
+1. config 静态资源的路径，通过配置source和dest各种文件路径以及服务端口
 2. index 启动服务
 
 ---
@@ -17,6 +17,8 @@
 `gulp sass` 编译config中styles.src里面的scss文件至styles.dest
 
 `gulp coffee` 编译config中scripts.src里面的coffee文件至scripts.dest
+
+`gulp jade` 编译config.templates.src里面的jade文件至templates.dest
 
 `gulp uglify` 压缩js文件
 
